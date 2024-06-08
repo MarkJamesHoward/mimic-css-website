@@ -3,9 +3,7 @@ layout: ../layouts/mdLayout.astro
 title: mimic-css
 ---
 
-# mimic-css
-
-**mimic-css** is a design system that allows you use standard CSS styles within the class attribute ALONG with Media Queries and Modifiers.
+**mimic-css** is a design system that enables standard CSS styles within the class attribute ALONG with Media Queries and Modifiers.
 
 So you are enabled to write standard CSS such as `display:flex` and apply a media query inline within the class e.g.
 

@@ -1,11 +1,18 @@
 /* SingleHyphenSnapable Media=none*/
-.font-size\:xl {
+.font-size\:lg {
+	font-size: 24px;
+}
+/* NoHypen Media=none*/
+.color\:white {
+	color: white;
+}
+/* SingleHyphenSnapable Media=extralarge*/
+@media (min-width: 1536px) {
+.extralarge\?font-size\:xl {
 	font-size: 48px;
+	}
 }
-/* SingleHyphenSnapable Media=none*/
-.font-weight\:md {
-	font-weight: md;
-}
+
 /* SingleHypen Media=none*/
 .font-weight\:800 {
 	font-weight: 800;
@@ -13,4 +20,8 @@
 /* NoHypen Media=none*/
 .color\:white {
 	color: white;
+}
+/* SingleHypen Media=none*/
+.text-align\:center {
+	text-align: center;
 }
