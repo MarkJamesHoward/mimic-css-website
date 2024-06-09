@@ -13,9 +13,9 @@
 	}
 }
 
-/* SingleHypen Media=none*/
-.font-weight\:800 {
-	font-weight: 800;
+/* SingleHyphenSnapable Media=none*/
+.font-weight\:md {
+	font-weight: 400;
 }
 /* NoHypen Media=none*/
 .color\:white {
@@ -24,4 +24,36 @@
 /* SingleHypen Media=none*/
 .text-align\:center {
 	text-align: center;
+}
+/* SingleHyphenSnapable Media=none*/
+.padding-top\:md {
+	padding-top: 8px;
+}
+/* SingleHyphenSnapable Media=none*/
+.padding-top\:md {
+	padding-top: 8px;
+}
+/* SingleHyphenSnapable Media=none*/
+.font-size\:md {
+	font-size: 16px;
+}
+/* SingleHypen Media=none*/
+.font-weight\:800 {
+	font-weight: 800;
+}
+/* SingleHyphenSnapable Media=none*/
+.font-weight\:sm {
+	font-weight: 300;
+}
+/* SingleHyphenSnapable Media=none*/
+.font-weight\:lg {
+	font-weight: 600;
+}
+/* SingleHyphenSnapable Media=none*/
+.font-weight\:xl {
+	font-weight: 800;
+}
+/* SingleHyphenSnapable Media=none*/
+.font-weight\:2xl {
+	font-weight: 900;
 }

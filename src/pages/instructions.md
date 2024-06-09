@@ -3,7 +3,8 @@ layout: ../layouts/mdLayout.astro
 title: mimic-css
 ---
 
-**mimic-css** is a design system that enables standard CSS styles within the class attribute ALONG with Media Queries and Modifiers.
+**mimic-css** is a design system that allows you use standard CSS styles within the class attribute ALONG with Media Queries and Modifiers. From this you gain the benefits of using a design system but without the downside of losing your CSS knowledge
+at the same time
 
 So you are enabled to write standard CSS such as `display:flex` and apply a media query inline within the class e.g.
 
@@ -21,6 +22,24 @@ Which will result in the below class being generated for you and ensuring that t
 }
 ```
 
+## Design System
+
+In order to provide consistency across a website we provide a set of standard values taht can be used rather than specific pixel values. There are 6 values that are used across the board **xs, sm, md, lg, xl and 2xl**
+
+```html
+<div class="padding-top:md">Some Text</div>
+```
+
+**becomes**
+
+```css
+.padding-top\:md {
+  padding-top: 8px;
+}
+```
+
+## Pseudo Classes
+
 You can also apply pseudo class like **hover** and **focus** inline with the class attribute
 
 ```html
@@ -34,9 +53,6 @@ Which will create a class for you like this
   background-color: blue;
 }
 ```
-
-From this you gain the benefits of using a design system but without the downside of losing your CSS knowledge
-at the same time
 
 ## Install:
 
@@ -74,19 +90,7 @@ Other options:
 - e: { type: "string", default: "", alias: "exclude" },
 - l: { type: "boolean", default: false, alias: "lit" },
 
-## Magic Numbers
-
-In order to reduce the amount of time spent looking up magic names in mimic-css there
-is **one** set of values used across the board:
-
-<ul>
-<li>xs</li>
-<li>sm</li>
-<li>md</li>
-<li>lg</li>
-<li>xl</li>
-<li>2xl</li>
-</ul>
+## Design systemmappings
 
 These specifiers will map to different **Pixel Values** depending upon the usage.
 
@@ -178,7 +182,7 @@ So to also search javascript and react files we would create the below:
 let config;
 
 export default config = {
-  extensions: [".html", ".js"],
+  extensions: [".html", ".js", ".astro", "ts"],
 };
 ```
 
