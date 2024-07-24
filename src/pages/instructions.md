@@ -172,7 +172,7 @@ The 5 options we have for specifying media breakpoints are below:
 
 ## Configuration
 
-By default mimic-css will search .html files for classes to process
+By default mimic-css will search ".html", ".js", ".astro", "ts" files for classes to process
 
 In order to serch additional files we can create a file named 'mimic.config.mjs'
 

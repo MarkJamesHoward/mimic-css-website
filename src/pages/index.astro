@@ -1,12 +1,23 @@
 ---
 import MySiteLayout from '../layouts/Layout.astro';
 import '../../mimic.css';
-import Instructions from './instructions.md';
 ---
 
 <MySiteLayout title="MimicCSS">
-  <div class="color:white">
+  <div class="color:white display:flex flex-direction:column">
+
       <div class="font-size:lg extralarge?font-size:xl font-weight:xl color:white text-align:center">Mimic CSS</div>
-      <Instructions/>
+     
+      <div class="width:100% display:flex flex-direction:row">
+        
+        <div class="display:flex flex-direction:column flex-basis:30%">
+          <div>Side Bar</div>
+          <div></div>
+        </div>
+
+        <div class="flex-basis:70%">Content</div>
+
+      </div>
+
   </div>
 </MySiteLayout>
