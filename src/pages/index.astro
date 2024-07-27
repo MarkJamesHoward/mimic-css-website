@@ -1,5 +1,8 @@
 ---
 import MySiteLayout from '../layouts/Layout.astro';
+import {Content as DesignSystem } from './DesignSystem.md';
+import {Content as PseudoClasses } from './PseudoClasses.md';
+
 import '../../mimic.css';
 ---
 
@@ -11,11 +14,30 @@ import '../../mimic.css';
       <div class="width:100% display:flex flex-direction:row">
         
         <div class="display:flex flex-direction:column flex-basis:30%">
-          <div>Side Bar</div>
-          <div></div>
+          <div>
+            <ul>
+              <li class="cursor: pointer">
+                Design System
+              </li>
+              <li>
+                PseudoClasses
+              </li>
+            </ul>
+          </div>
+          
         </div>
 
-        <div class="flex-basis:70%">Content</div>
+        <div class="flex-basis:70% margin-left:xl">
+
+          <div>
+            <div>
+              <DesignSystem/>
+              <hr class="margin:xl">
+              <PseudoClasses/>
+            </div>
+          </div>
+
+        </div>
 
       </div>
 
