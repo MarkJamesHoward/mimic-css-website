@@ -13,7 +13,7 @@
     "@astrojs/check": "^0.5.10",
     "astro": "^4.7.0",
     "concurrently": "^8.2.2",
-    "mimic-css": "^0.0.98-alpha",
+    "mimic-css": "^0.0.99-alpha",
     "typescript": "^5.4.5"
   }
 }
