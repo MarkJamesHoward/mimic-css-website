@@ -54,13 +54,13 @@ Which will create a class for you like this
 }
 ``` -->
 
-## Install:
+<!-- ## Install:
 
 `npm install --save-dev mimic-css`
 
-mimic-css is a development time process that watches for file changes to your web pages and create classes from them.
+mimic-css is a development time process that watches for file changes to your web pages and create classes from them. -->
 
-## Usage
+<!-- ## Usage
 
 `npx mimic`
 
@@ -88,7 +88,7 @@ Other options:
 - i: { type: "string", default: "./", alias: "input" },
 - o: { type: "string", default: "./mimic.css", alias: "output" },
 - e: { type: "string", default: "", alias: "exclude" },
-- l: { type: "boolean", default: false, alias: "lit" },
+- l: { type: "boolean", default: false, alias: "lit" }, -->
 
 ## Design systemmappings
 
