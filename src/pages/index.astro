@@ -2,6 +2,10 @@
 import MySiteLayout from '../layouts/Layout.astro';
 import {Content as DesignSystem } from './DesignSystem.md';
 import {Content as PseudoClasses } from './PseudoClasses.md';
+import {Content as Install } from './Install.md';
+import {Content as Usage } from './Usage.md';
+
+
 
 import '../../mimic.css';
 ---
@@ -9,18 +13,24 @@ import '../../mimic.css';
 <MySiteLayout title="MimicCSS">
   <div class="color:white display:flex flex-direction:column">
 
-      <div class="font-size:lg extralarge?font-size:xl font-weight:xl color:white text-align:center">Mimic CSS</div>
+      <div class="margin-bottom:xl font-size:lg extralarge?font-size:xl font-weight:xl color:white text-align:center">Mimic CSS</div>
      
       <div class="width:100% display:flex flex-direction:row">
         
         <div class="display:flex flex-direction:column flex-basis:20%">
           <div>
-            <ul>
-              <li class="background-color:pink:hover">
+            <ul class="list-style-type:none">
+              <li class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
                 Design System
               </li>
-              <li>
+              <li class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
                 PseudoClasses
+              </li>
+              <li class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
+                Install
+              </li>
+              <li class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
+                Usage
               </li>
             </ul>
           </div>
@@ -34,6 +44,10 @@ import '../../mimic.css';
               <DesignSystem/>
               <hr class="margin:xl">
               <PseudoClasses/>
+              <hr class="margin:xl">
+              <Install/>
+              <hr class="margin:xl">
+              <Usage/>
             </div>
           </div>
 

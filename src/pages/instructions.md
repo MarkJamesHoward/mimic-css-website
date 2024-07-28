@@ -21,7 +21,7 @@ Which will result in the below class being generated for you and ensuring that t
   }
 }
 ```
-
+<!-- 
 ## Design System
 
 In order to provide consistency across a website we provide a set of standard values taht can be used rather than specific pixel values. There are 6 values that are used across the board **xs, sm, md, lg, xl and 2xl**
@@ -36,8 +36,8 @@ In order to provide consistency across a website we provide a set of standard va
 .padding-top\:md {
   padding-top: 8px;
 }
-```
-
+``` -->
+<!-- 
 ## Pseudo Classes
 
 You can also apply pseudo class like **hover** and **focus** inline with the class attribute
@@ -52,7 +52,7 @@ Which will create a class for you like this
 .background-color\:blue\:hover:hover {
   background-color: blue;
 }
-```
+``` -->
 
 ## Install:
 
