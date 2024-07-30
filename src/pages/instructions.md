@@ -3,7 +3,7 @@ layout: ../layouts/mdLayout.astro
 title: mimic-css
 ---
 
-**mimic-css** is a design system that allows you use standard CSS styles within the class attribute ALONG with Media Queries and Modifiers. From this you gain the benefits of using a design system but without the downside of losing your CSS knowledge
+<!-- **mimic-css** is a design system that allows you use standard CSS styles within the class attribute ALONG with Media Queries and Modifiers. From this you gain the benefits of using a design system but without the downside of losing your CSS knowledge
 at the same time
 
 So you are enabled to write standard CSS such as `display:flex` and apply a media query inline within the class e.g.
@@ -20,7 +20,7 @@ Which will result in the below class being generated for you and ensuring that t
     display: flex;
   }
 }
-```
+``` -->
 <!-- 
 ## Design System
 
@@ -90,7 +90,7 @@ Other options:
 - e: { type: "string", default: "", alias: "exclude" },
 - l: { type: "boolean", default: false, alias: "lit" }, -->
 
-## Design systemmappings
+<!-- ## Design systemmappings
 
 These specifiers will map to different **Pixel Values** depending upon the usage.
 
@@ -114,9 +114,9 @@ Whereas for **Padding** the mappings will be different:
 <li>lg:     20px</li>
 <li>xl:     50px</li>
 <li>2xl:    200px</li>
-</ul>
+</ul> -->
 
-### An example for Padding
+<!-- ### An example for Padding
 
 ```html
 <div class="padding-top:md">Some Text</div>
@@ -140,7 +140,7 @@ Whereas for **Padding** the mappings will be different:
 .font-size\:md {
   font-size: 16px;
 }
-```
+``` -->
 
 Normal CSS will remain unchanged (bar a space inserted)
 

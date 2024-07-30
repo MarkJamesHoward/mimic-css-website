@@ -26,4 +26,4 @@ Whereas for **Padding** the mappings will be different:
 <li>lg:     20px</li>
 <li>xl:     50px</li>
 <li>2xl:    200px</li>
-</ul> -->
+</ul> 
