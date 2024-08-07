@@ -1,0 +1,7 @@
+netlify deploy --prod
+
+npm run dev
+
+npm run build
+
+set-executionpolicy remotesigned

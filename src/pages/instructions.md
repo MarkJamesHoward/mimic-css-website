@@ -158,7 +158,7 @@ Normal CSS will remain unchanged (bar a space inserted)
 }
 ```
 
-## Media Breakpoints
+<!-- ## Media Breakpoints
 
 The 5 options we have for specifying media breakpoints are below:
 
@@ -168,9 +168,9 @@ The 5 options we have for specifying media breakpoints are below:
 <li>medium</li>
 <li>large</li>
 <li>extralarge</li>
-</ul>
+</ul> -->
 
-## Configuration
+<!-- ## Configuration
 
 By default mimic-css will search ".html", ".js", ".astro", "ts" files for classes to process
 
@@ -183,10 +183,10 @@ let config;
 
 export default config = {
   extensions: [".html", ".js", ".astro", "ts"],
-};
+}; -->
 ```
 
-## Lit Integration
+<!-- ## Lit Integration
 
 To include CSS in LitElements a good approach to take is Constructable Style Sheets. These require the CSS to be in a JS string and mimic-css provide this output in the file **mimic.css.js** for us when using the -l flag.
 
@@ -197,4 +197,4 @@ import { TWStyles } from "../styles/mimic.css.js";
 
 export class Header extends
   LitElement { static styles = [css``, TWStyles];
-```
+``` -->

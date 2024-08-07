@@ -4,10 +4,15 @@ import {Content as DesignSystem } from './DesignSystem.md';
 import {Content as PseudoClasses } from './PseudoClasses.md';
 import {Content as Install } from './Install.md';
 import {Content as Usage } from './Usage.md';
-import {Content as Mappings } from './DesignSystemMappings.md';
+import {Content as DesignSystemMappings } from './DesignSystemMappings.md';
 import {Content as ExampleSnapping } from './ExampleSnapping.md';
 import {Content as Overview } from './Overview.md';
-// import    '../../node_modules/scroll-to-top-wc/index.ts';
+import {Content as MediaBreakPoints} from './MediaBreakPoints.md'
+import {Content as Configuration} from './Configuration.md'
+import {Content as LitIntegration} from './LitIntegration.md'
+
+import { ScrollToTop } from  '../components/index.ts';
+
 
 import '../../mimic.css';
 ---
@@ -19,23 +24,38 @@ import '../../mimic.css';
       
       <div class="width:100% medium?display:flex flex-direction:row">
         
-        <div class="display:flex flex-direction:column medium?flex-basis:20% position:sticky top:0px height:200px">
-          <div class="display:none medium?display:block">
+        <div class=" display:none medium?display:block display:flex flex-direction:column medium?flex-basis:20% position:sticky top:0px height:200px">
+          <div class="font-size:lg line-height:xl" >
             <ul class="list-style-type:none">
+              <li onclick="Scroll('Overview')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
+                Overview
+              </li>
               <li onclick="Scroll('DesignSystem')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
                 Design System
               </li>
-              <li class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
+              <li  onclick="Scroll('PseudoClasses')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
                 PseudoClasses
               </li>
-              <li class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
+              <li  onclick="Scroll('Install')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
                 Install
               </li>
-              <li class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
+              <li  onclick="Scroll('Usage')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
                 Usage
               </li>
-              <li class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
-                Snapping Examples
+              <li onclick="Scroll('DesignSystemMappings')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
+                Design System Mappings
+              </li>
+              <li onclick="Scroll('ExampleSnapping')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
+                Example Snapping
+              </li>
+              <li onclick="Scroll('MediaBreakPoints')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
+                MediaBreakPoints
+              </li>
+              <li onclick="Scroll('Configuration')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
+                Configuration
+              </li>
+              <li onclick="Scroll('LitIntegration')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
+                LitIntegration
               </li>
             </ul>
           </div>
@@ -45,7 +65,6 @@ import '../../mimic.css';
         <div class="medium?flex-basis:80% margin-left:lg margin-right:sm medium?margin-right:lg">
 
           <div class="position:sticky top:0px margin-bottom:xl font-size:xl extralarge?font-size:2xl font-weight:2xl background-color:black color:white text-align:center">Mimic CSS</div>
-     
 
           <div>
             <div>
@@ -58,17 +77,24 @@ import '../../mimic.css';
               <hr class="margin:xl">
               <Usage/>
               <hr class="margin:xl">
-              <Mappings/>
+              <DesignSystemMappings/>
               <hr class="margin:xl">
               <ExampleSnapping/>
+              <hr class="margin:xl">
+              <MediaBreakPoints/>
+              <hr class="margin:xl">
+              <Configuration/>
+              <hr class="margin:xl">
+              <LitIntegration/>
+              <div class="height:300px"></div>
             </div>
+            <ScrollToTop client:load/>
           </div>
 
         </div>
 
       </div>
 
-      <!-- <ScrollToTop client:load/> -->
 
   </div>
 </MySiteLayout>
@@ -77,22 +103,36 @@ import '../../mimic.css';
 <script is:inline>
     function Scroll(location) {
     switch (location) {
+      case 'Overview':
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      break;
       case 'DesignSystem':
-      window.scrollTo({ top: 100, behavior: "smooth" });
-      break;
-      case 'PseudoClasses':
-      window.scrollTo({ top: 200, behavior: "smooth" });
-      break;
-      case 'Install':
-      window.scrollTo({ top: 300, behavior: "smooth" });
-      break;
-      case 'Usage':
       window.scrollTo({ top: 400, behavior: "smooth" });
       break;
-      case 'Snapping Examples':
-      window.scrollTo({ top: 500, behavior: "smooth" });
+      case 'PseudoClasses':
+      window.scrollTo({ top: 750, behavior: "smooth" });
       break;
-     
+      case 'Install':
+      window.scrollTo({ top: 1050, behavior: "smooth" });
+      break;
+      case 'Usage':
+      window.scrollTo({ top: 1200, behavior: "smooth" });
+      break;
+      case 'DesignSystemMappings':
+      window.scrollTo({ top: 1800, behavior: "smooth" });
+      break;
+      case 'ExampleSnapping':
+      window.scrollTo({ top: 2300, behavior: "smooth" });
+      break;
+      case 'MediaBreakPoints':
+      window.scrollTo({ top: 2700, behavior: "smooth" });
+      break;
+      case 'Configuration':
+      window.scrollTo({ top: 3000, behavior: "smooth" });
+      break;
+      case 'LitIntegration':
+      window.scrollTo({ top: 3400, behavior: "smooth" });
+      break;
     }
 
   }

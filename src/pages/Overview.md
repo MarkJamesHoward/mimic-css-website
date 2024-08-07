@@ -2,8 +2,12 @@
 title: mimic-css
 ---
 
-**mimic-css** is a design system that allows you use standard CSS styles within the class attribute ALONG with Media Queries and Modifiers. From this you gain the benefits of using a design system but without the downside of losing your CSS knowledge
-at the same time
+**mimic-css** is a design system that allows you to use standard CSS styles within the class attribute ALONG with Media Queries and Modifiers. Particulary suited to prototyping websites where speed is an important factor. 
+
+One of the differentiating factors with mimic-css is that it does not use magic utility class names; the same css that you would use in a style tag is exactly what you use in the class tag. From this you gain the benefits of using a design system but without the downside of losing your CSS knowledge
+at the same time. 
+
+This keeps the learning curve for mimic-css to a minimun and is further reduced by keeping the standard values that can be assigned to say border widths and margins consistent across the board. You'll only need to be aware of 6 values xs, sm, md, lg, xl and 2xl and you are good to go with consistent spacings across all layout attributes.
 
 So you are enabled to write standard CSS such as `display:flex` and apply a media query inline within the class e.g.
 
