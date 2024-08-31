@@ -7,10 +7,9 @@ title: mimic-css
 The 5 options we have for specifying media breakpoints are below:
 
 <ul>
-<li>extrasmall</li>
-<li>small</li>
-<li>medium</li>
-<li>large</li>
-<li>extralarge</li>
+<li>xs</li>
+<li>sm</li>
+<li>md</li>
+<li>lg</li>
+<li>xl</li>
 </ul>
-

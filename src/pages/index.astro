@@ -10,6 +10,10 @@ import {Content as Overview } from './Overview.md';
 import {Content as MediaBreakPoints} from './MediaBreakPoints.md'
 import {Content as Configuration} from './Configuration.md'
 import {Content as LitIntegration} from './LitIntegration.md'
+import {Content as CustomClasses} from './CustomClasses.md'
+import {Content as OverridingDefaults} from './OverridingDefaults.md'
+
+
 
 import { ScrollToTop } from  '../components/index.ts';
 
@@ -34,7 +38,10 @@ import '../../mimic.css';
                 Design System
               </li>
               <li  onclick="Scroll('PseudoClasses')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
-                PseudoClasses
+                Pseudo Classes
+              </li>
+              <li  onclick="Scroll('CustomClasses')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
+                Custom Classes
               </li>
               <li  onclick="Scroll('Install')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
                 Install
@@ -49,13 +56,16 @@ import '../../mimic.css';
                 Example Snapping
               </li>
               <li onclick="Scroll('MediaBreakPoints')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
-                MediaBreakPoints
+                Media Break Points
               </li>
               <li onclick="Scroll('Configuration')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
                 Configuration
               </li>
+              <li onclick="Scroll('Configuration')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
+                Overriding Defaults
+              </li>
               <li onclick="Scroll('LitIntegration')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
-                LitIntegration
+                Lit Integration
               </li>
             </ul>
           </div>
@@ -73,6 +83,8 @@ import '../../mimic.css';
               <hr class="margin:xl">
               <PseudoClasses/>
               <hr class="margin:xl">
+              <CustomClasses/>
+              <hr class="margin:xl">
               <Install/>
               <hr class="margin:xl">
               <Usage/>
@@ -84,6 +96,8 @@ import '../../mimic.css';
               <MediaBreakPoints/>
               <hr class="margin:xl">
               <Configuration/>
+              <hr class="margin:xl">
+              <OverridingDefaults/>
               <hr class="margin:xl">
               <LitIntegration/>
               <div class="height:300px"></div>
