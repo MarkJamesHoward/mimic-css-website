@@ -12,11 +12,9 @@ import {Content as Configuration} from './Configuration.md'
 import {Content as LitIntegration} from './LitIntegration.md'
 import {Content as CustomClasses} from './CustomClasses.md'
 import {Content as OverridingDefaults} from './OverridingDefaults.md'
-
-
+import {Content as ColorPalette} from './ColorPalette.md'
 
 import { ScrollToTop } from  '../components/index.ts';
-
 
 import '../../mimic.css';
 ---
@@ -61,7 +59,10 @@ import '../../mimic.css';
               <li onclick="Scroll('Configuration')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
                 Configuration
               </li>
-              <li onclick="Scroll('Configuration')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
+              <li onclick="Scroll('ColorPalette')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
+                Color Palette
+              </li>
+              <li onclick="Scroll('OverridingDefaults')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
                 Overriding Defaults
               </li>
               <li onclick="Scroll('LitIntegration')" class="text-decoration:none background-color:#010101:hover cursor:pointer:hover">
@@ -96,6 +97,8 @@ import '../../mimic.css';
               <MediaBreakPoints/>
               <hr class="margin:xl">
               <Configuration/>
+              <hr class="margin:xl">
+              <ColorPalette/>
               <hr class="margin:xl">
               <OverridingDefaults/>
               <hr class="margin:xl">
@@ -141,8 +144,11 @@ import '../../mimic.css';
       case 'MediaBreakPoints':
       window.scrollTo({ top: 2700, behavior: "smooth" });
       break;
-      case 'Configuration':
+      case 'ColorPalette':
       window.scrollTo({ top: 3000, behavior: "smooth" });
+      break;
+      case 'Configuration':
+      window.scrollTo({ top: 3200, behavior: "smooth" });
       break;
       case 'LitIntegration':
       window.scrollTo({ top: 3400, behavior: "smooth" });
