@@ -4,7 +4,7 @@ title: mimic-css
 
 ## Usage
 
-`npx mimic`
+`npx mimic-css`
 
 The app will search in the current folder (and all subfolders) for .html, .ts, .js and .astro files.
 Ouput will be sent to the file mimic.css which you can link:
