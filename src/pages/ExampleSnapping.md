@@ -16,6 +16,8 @@ title: mimic-css
 }
 ```
 
+<a href="/Examples/Padding">See Padding Examples</a>
+
 ### And then for Font Size you will see
 
 ```html
@@ -27,3 +29,5 @@ title: mimic-css
   font-size: 16px;
 }
 ```
+
+<a href="/Examples/FontSize">See Font Size Examples</a>
